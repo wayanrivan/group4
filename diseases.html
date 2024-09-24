@@ -351,85 +351,44 @@
         renderCards(currentPage);
         renderPagination();
 
-        //symptommodal
+        // Function to handle showing symptoms in the modal
         const symptommodal = (id) => {
-            let modaltitle;
-            let modalbody;
-            switch (id) {
-                case 1:
-                    modaltitle = `<h5 class="modal-title">Symptoms of Tooth Decay</h5>`
-                    modalbody = `
-                                <ul>
-                                    <li>Toothache</li>
-                                    <li>Tooth Sensitivity</li>
-                                    <li>Visible Cavities</li>
-                                    <li>Tooth Stains</li>
-                                    <li>Pain When Chewing</li>
-                                    <li>Bad Breath</li>
-                                    <li>Swollen or Bleeding Gums</li>
-                                </ul>`
-                    break;
+            const modalTitle = document.getElementById('modaltitle');
+            const modalBody = document.getElementById('modalbody');
 
-                case 2:
-                    modaltitle = `<h5 class="modal-title">Symptoms of Periodontal Disease</h5>`
-                    modalbody = `<ul>
-                                    <li>Swollen or Puffy Gums</li>
-                                    <li>Bleeding Gums</li>
-                                    <li>Receding Gums</li>
-                                    <li>Persistent Bad Breath</li>
-                                    <li>Loose Teeth</li>
-                                    <li>Painful Chewing</li>
-                                    <li>Pus Between Teeth and Gums</li>
-                                    <li>Changes in Bite</li>
-                                </ul>`
-                    break;
+            // Define the symptoms for each dental issue
+            const symptoms = [
+                {
+                    title: "Symptoms of Tooth Decay",
+                    body: "Common symptoms include toothache, sensitivity to hot or cold, visible holes or pits in the teeth, and staining on the surface of the teeth."
+                },
+                {
+                    title: "Symptoms of Periodontal Disease",
+                    body: "Symptoms include swollen or bleeding gums, persistent bad breath, loose teeth, and painful chewing."
+                },
+                {
+                    title: "Symptoms of Tooth Loss",
+                    body: "Symptoms can include pain in the affected area, shifts in the position of other teeth, and difficulty chewing."
+                },
+                {
+                    title: "Symptoms of Malocclusion",
+                    body: "Common symptoms include difficulty biting or chewing, teeth grinding, jaw pain, and speech difficulties."
+                },
+                {
+                    title: "Symptoms of Oral Cancer",
+                    body: "Symptoms may include sores that do not heal, lumps, persistent mouth pain, and difficulty swallowing."
+                }
+            ];
 
-                case 3:
-                    modaltitle = `<h5 class="modal-title">Symptoms of Tooth Loss</h5>`
-                    modalbody = `<ul>
-                                    <li>Loose Teeth</li>
-                                    <li>Gum Recession</li>
-                                    <li>Swollen or Bleeding Gums</li>
-                                    <li>Persistent Tooth Pain</li>
-                                    <li>Shifting Teeth</li>
-                                    <li>Difficulty Chewing</li>
-                                    <li>Gap in the Mouth</li>
-                                    <li>Bad Breath</li>
-                                </ul>`
-                    break;
-                case 4:
-                    modaltitle = `<h5 class="modal-title">Symptoms of Malocclusion (Misaligned Teeth)</h5>`
-                    modalbody = `<ul>
-                                    <li>Crooked or Overlapping Teeth</li>
-                                    <li>Bite Issues</li>
-                                    <li>Jaw Pain</li>
-                                    <li>Frequent Headaches</li>
-                                    <li>Speech Difficulties</li>
-                                    <li>Wear and Tear on Teeth</li>
-                                    <li>Gum Problems</li>
-                                    <li>Facial Asymmetry</li>
-                                </ul>`
-                    break;
-                case 5:
-                    modaltitle = `<h5 class="modal-title">Symptoms of Oral Cancer</h5>`
-                    modalbody = `<ul>
-                                    <li>Sores or Ulcers</li>
-                                    <li>Lumps or Thickening</li>
-                                    <li>Red or White Patches</li>
-                                    <li>Difficulty Swallowing</li>
-                                    <li>Sore Throat</li>
-                                    <li>Change in Voice</li>
-                                    <li>Numbness</li>
-                                    <li>Weight Loss</li>
-                                    <li>Bad Breath</li>
-                                </ul>`
-                    break;
-            }
+            // Get the symptom details based on the ID
+            const symptomDetail = symptoms[id - 1];
+            modalTitle.textContent = symptomDetail.title;
+            modalBody.innerHTML = symptomDetail.body;
 
-            $('#modaltitle').html(modaltitle);
-            $('#modalbody').html(modalbody);
-            $('.modal').modal('show');
-        }
+            // Show the modal
+            const modal = new bootstrap.Modal(document.getElementById('symptommodal'));
+            modal.show();
+        };
 
         window.addEventListener('load', function () {
             document.body.classList.add('fade-in');

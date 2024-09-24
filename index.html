@@ -123,7 +123,7 @@
 
     <!-- content -->
 
-    <!-- corousel -->
+    <!-- carousel -->
     <div id="carouselExampleCaptions" class="carousel slide custom-carousel" data-bs-ride="false">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -170,7 +170,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <!-- end corousel -->
+    <!-- end carousel -->
 
     <!-- graphic -->
     <div class="container" style="margin-top: 5%;">
@@ -199,20 +199,18 @@
                     </div>
                 </div>
                 <div class="card mt-2">
-                    <div class="card">
-                        <div class="card-header">
-                            GOVERMENT ACTION
-                        </div>
-                        <div class="card-body">
-                            <ul>
-                                <li>Public Awareness Campaigns</li>
-                                <li>School Dental Health Programs</li>
-                                <li>Improving Access to Dental Care</li>
-                                <li>Collaboration with Health Professionals</li>
-                                <li>Subsidized Dental Services</li>
-                                <li>Training for Dental Practitioners</li>
-                            </ul>
-                        </div>
+                    <div class="card-header">
+                        GOVERNMENT ACTION
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Public Awareness Campaigns</li>
+                            <li>School Dental Health Programs</li>
+                            <li>Improving Access to Dental Care</li>
+                            <li>Collaboration with Health Professionals</li>
+                            <li>Subsidized Dental Services</li>
+                            <li>Training for Dental Practitioners</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -227,84 +225,64 @@
             <div class="col-md-4 col-sm-12 mt-2">
                 <div class="card" style="height: 257px;">
                     <div class="card-header">
-                        <a href="javascript:void(0)" style="color: black;" onclick="showmodal(1)">Educational
-                            Campaigns</a>
+                        <h4>Dental Check-up</h4>
                     </div>
                     <div class="card-body">
-                        <p>These are often conducted in schools, communities, and health centers, focusing on teaching
-                            proper brushing techniques, the importance of fluoride, and the prevention of cavities and
-                            gum diseases.
-                        </p>
+                        <p class="card-text">Regular dental check-ups help prevent problems before they start. It is
+                            essential to visit a dentist every six months.</p>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-12 mt-2">
-                <div class="card">
-                    <div class="card-header">
-                        <a href="javascript:void(0)" style="color: black;" onclick="showmodal(2)">Collaborations with
-                            Healthcare Providers</a>
-                    </div>
-                    <div class="card-body">
-                        <p>Dental professionals work together with schools and community health centers (Puskesmas) to
-                            offer regular check-ups and treatments. These initiatives also include awareness programs on
-                            the connection between dental health and overall well-being.
-                        </p>
+                    <div class="card-footer text-center">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal1">Learn More</button>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12 mt-2">
                 <div class="card" style="height: 257px;">
                     <div class="card-header">
-                        <a href="javascript:void(0)" style="color: black;" onclick="showmodal(3)">School Dental Health
-                            Program (UKGS)</a>
+                        <h4>Oral Hygiene</h4>
                     </div>
                     <div class="card-body">
-                        <p>This program targets school-aged children to ensure they receive early dental care education.
-                            It includes routine dental check-ups and treatments, such as fluoride application and the
-                            distribution of toothbrushes.
-                        </p>
+                        <p class="card-text">Maintaining good oral hygiene is crucial for overall health. Brush and
+                            floss daily, and avoid sugary foods.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal2">Learn More</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-12 mt-3">
-                <div class="card">
+            <div class="col-md-4 col-sm-12 mt-2">
+                <div class="card" style="height: 257px;">
                     <div class="card-header">
-                        <a href="javascript:void(0)" style="color: black;" onclick="showmodal(4)">Maternal and Child
-                            Health Programs</a>
+                        <h4>Healthy Diet</h4>
                     </div>
                     <div class="card-body">
-                        <p>These initiatives aim to educate pregnant women and parents on the importance of early
-                            childhood dental care, promoting healthy habits from infancy.
-                        </p>
+                        <p class="card-text">Eating a balanced diet rich in vitamins and minerals can support oral
+                            health. Drink plenty of water and limit soda intake.</p>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-12 mt-3">
-                <div class="card">
-                    <div class="card-header">
-                        <a href="javascript:void(0)" style="color: black;" onclick="showmodal(5)">Rural Outreach
-                            Programs</a>
-                    </div>
-                    <div class="card-body">
-                        <p>In more remote areas, mobile clinics and volunteer programs provide dental services to
-                            underserved communities, ensuring access to care and education.
-                        </p>
+                    <div class="card-footer text-center">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal3">Learn More</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Counseling -->
+    <!-- end Counseling -->
 
-    <!-- modal -->
-    <div class="modal fade" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
+    <!-- Modals -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modaltitle"></h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Dental Check-up</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body" id="modalbody">
+                <div class="modal-body">
+                    <p>It is crucial to schedule regular dental check-ups to ensure your oral health is maintained.
+                        Dentists can identify potential issues before they become serious. Aim for a check-up every six
+                        months for optimal care.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -312,171 +290,89 @@
             </div>
         </div>
     </div>
-    <!-- end modal -->
 
-    <!-- end content -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Oral Hygiene</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Good oral hygiene practices include brushing your teeth twice a day, flossing daily, and
+                        rinsing with mouthwash. These steps can help prevent cavities and gum disease.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- footer -->
-    <footer class="d-flex justify-content-center bg-secondary bg-gradient bg-opacity-75" style="margin-top: 5%;">
-        <p class="mt-2">
-            Made with love
-            <i class="fa-solid fa-heart"></i>
-            <a href="footer.html" style="color: black;">Group 4</a>
-        </p>
-    </footer>
-    <!-- end footer -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Healthy Diet</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>A healthy diet plays a significant role in maintaining oral health. Foods rich in calcium,
+                        phosphorus, and vitamins are essential. Limit sugary snacks and drinks to reduce the risk of
+                        cavities.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Modals -->
 
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
-        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+        integrity="sha384-6OHh6AIE6yb4Kso8Jp1I05iBdVv4g+V+e79TifZfYQ9w3Zk2l68y5aXt7DBhb5Ht" crossorigin="anonymous"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
     <script>
-        //modal
-        const showmodal = (id) => {
-            let modaltitle;
-            let modalbody;
-            switch (id) {
-                case 1:
-                    modaltitle = `<h5 class="modal-title">Example of Educational Campaigns</h5>`
-                    modalbody = `
-                                <ul>
-                                    <li>National Tooth Brushing Day</li>
-                                    <li>Campaign (Brush Your Teeth Twice a Day)</li>
-                                    <li>Oral Health Education in Rural Areas</li>
-                                    <li>Indonesia Free of Cavities 2030 Movement</li>
-                                </ul>`
-                    break;
-
-                case 2:
-                    modaltitle = `<h5 class="modal-title">Example of Collaborations with Healthcare Providers</h5>`
-                    modalbody = `<ul>
-                                    <li>Community Health Centers (Puskesmas)</li>
-                                    <li>Mobile Dental Clinics</li>
-                                    <li>Public-Private Partnerships</li>
-                                </ul>`
-                    break;
-
-                case 3:
-                    modaltitle = `<h5 class="modal-title">Example of School Dental Health Program (UKGS)</h5>`
-                    modalbody = `<ul>
-                                    <li>Dental Check-ups</li>
-                                    <li>Fluoride Treatments</li>
-                                    <li>Toothbrushing Campaigns</li>
-                                    <li>Educational Sessions</li>
-                                    <li>Distribution of Dental Kits</li>
-                                    <li>Early Intervention</li>
-                                </ul>`
-                    break;
-                case 4:
-                    modaltitle = `<h5 class="modal-title">Example of Maternal and Child Health Programs</h5>`
-                    modalbody = `<ul>
-                                    <li>Prenatal Care</li>
-                                    <li>Dental Care for Pregnant Women</li>
-                                    <li>Newborn and Infant Care</li>
-                                    <li>Health Education</li>
-                                    <li>Mobile Health Clinics</li>
-                                </ul>`
-                    break;
-                case 5:
-                    modaltitle = `<h5 class="modal-title">Example of Rural Outreach Programs</h5>`
-                    modalbody = `<ul>
-                                    <li>Mobile Dental Clinics</li>
-                                    <li>Community Education</li>
-                                    <li>Free Dental Supplies</li>
-                                    <li>School-Based Programs</li>
-                                    <li>Collaboration with Local Health Workers</li>
-                                </ul>`
-                    break;
-            }
-
-            $('#modaltitle').html(modaltitle);
-            $('#modalbody').html(modalbody);
-            $('.modal').modal('show');
-        }
-
-        $(document).ready(function () {
-            // Navbar toggle
-            let navbarVisible = true;
-
-            $('#navbarToggle').on('click', function () {
-                if (navbarVisible) {
-                    $('#navbarNav').collapse('hide');
-                } else {
-                    $('#navbarNav').collapse('show');
-                }
-                navbarVisible = !navbarVisible;
-            });
-
-            //graphic
-            Highcharts.chart('container', {
-                title: {
-                    text: ''
-                },
-
-                accessibility: {
-                    point: {
-                        valueDescriptionFormat:
-                            '{xDescription}{separator}{value} million(s)'
-                    }
-                },
-
-                xAxis: {
-                    title: {
-                        text: 'Year'
-                    },
-                    categories: [2020, 2021, 2022, 2023, 2024]
-                },
-
-                yAxis: {
-                    type: 'logarithmic',
-                    title: {
-                        text: 'Number of Dental Disorder Patients in Indonesia'
-                    }
-                },
-
-                tooltip: {
-                    headerFormat: '<b>{series.name}</b><br />',
-                    pointFormat: '{point.y} million(s)'
-                },
-
+        document.addEventListener('DOMContentLoaded', function () {
+            const data = {
+                categories: ['Cavities', 'Gum Disease', 'Tooth Sensitivity', 'Oral Cancer'],
                 series: [{
-                    name: 'Patients in Indonesia',
-                    keys: ['y', 'color'],
-                    data: [
-                        [29000000, '#0000ff'],
-                        [30000000, '#8d0073'],
-                        [31000000, '#ba0046'],
-                        [32000000, '#d60028'],
-                        [33000000, '#eb0014'],
-                    ],
-                    color: {
-                        linearGradient: {
-                            x1: 0,
-                            x2: 0,
-                            y1: 1,
-                            y2: 0
-                        },
-                        stops: [
-                            [0, '#0000ff'],
-                            [1, '#ff0000']
-                        ]
+                    name: 'Patients',
+                    data: [100, 80, 50, 20]
+                }]
+            };
+
+            Highcharts.chart('container', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: 'Dental Disorders among Patients in Indonesia'
+                },
+                xAxis: {
+                    categories: data.categories,
+                    title: {
+                        text: null
                     }
-                }],
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Number of Patients',
+                        align: 'high'
+                    }
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle'
+                },
+                series: data.series,
                 credits: {
                     enabled: false
-                },
+                }
             });
         });
-        window.addEventListener('load', function () {
-            document.body.classList.add('fade-in');
-        });
-
     </script>
 </body>
-
 </html>

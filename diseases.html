@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dental Health | Diseases</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .navbar-nav .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.75);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-secondary bg-gradient bg-opacity-75">
+        <div class="container-fluid">
+            <button class="navbar-toggler mb-3" type="button" id="navbarToggle" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse container" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link active bg-light bg-opacity-75" aria-current="page"
+                            style="border-radius: 10px;" href="diseases.html">Diseases</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="clinics.html">Clinics</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="information.html">Information</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- content -->
+    <div class="container mt-3">
+
+        <!-- DENTAL PROBLEMS PICTURES -->
+        <h1 class="d-flex justify-content-center">The Most Common Dental Problems Experienced</h1>
+        <div class="row d-flex justify-content-center">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-4 col-sm-12 mt-4">
+                    <div class="card" style="width: 100%;">
+                        <img src="asset/image/toothdecay.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text"><a href="javascript:void(0)" style="color: black;"
+                                    onclick="symptommodal(1)">Symptoms of Tooth Decay</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 mt-4">
+                    <div class="card" style="width: 100%;">
+                        <img src="asset/image/periodontaldesease.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text"><a href="javascript:void(0)" style="color: black;"
+                                    onclick="symptommodal(2)">Periodontal Disease (Gum Disease)</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 mt-4">
+                    <div class="card" style="width: 100%;">
+                        <img src="asset/image/toothloss.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text"><a href="javascript:void(0)" style="color: black;"
+                                    onclick="symptommodal(3)">Tooth Loss</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 mt-3">
+                    <div class="card" style="width: 100%;">
+                        <img src="asset/image/misalignedteeth.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text"><a href="javascript:void(0)" style="color: black;"
+                                    onclick="symptommodal(4)">Malocclusion (Misaligned Teeth)</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 mt-3">
+                    <div class="card" style="width: 100%;">
+                        <img src="asset/image/oralcancer.jpg" class="card-img-top" style="height: 170px;">
+                        <div class="card-body">
+                            <p class="card-text"><a href="javascript:void(0)" style="color: black;"
+                                    onclick="symptommodal(5)">Oral Cancer</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END DENTAL PROBLEMS PICTURES -->
+
+        <!-- DENTAL PROBLEMS EXPLANATION -->
+        <h1 class="d-flex justify-content-center mt-5">Explanation of the Most Common Dental Problems Suffered</h1>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4 col-sm-12 mt-4">
+                <div class="card" style="height: 283px;">
+                    <div class="card-header">
+                        Dental Caries (Tooth Decay)
+                    </div>
+                    <div class="card-body">
+                        <p>This is the most prevalent dental problem in Indonesia. It occurs due to the buildup of
+                            plaque and bacteria, leading to cavities. Poor oral hygiene, a diet high in sugar, and
+                            limited access to dental care in rural areas contribute to its high incidence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mt-4">
+                <div class="card">
+                    <div class="card-header">
+                        Periodontal Disease (Gum Disease)
+                    </div>
+                    <div class="card-body">
+                        <p>Many Indonesians suffer from gum diseases, including gingivitis and periodontitis. These
+                            conditions are often caused by inadequate brushing and flossing, resulting in the buildup of
+                            plaque along the gum line, eventually leading to inflammation, bleeding, and in severe
+                            cases, tooth loss.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mt-4">
+                <div class="card" style="height: 283px;">
+                    <div class="card-header">
+                        Tooth Loss
+                    </div>
+                    <div class="card-body">
+                        <p>Due to a lack of timely treatment for caries and gum disease, many people experience tooth
+                            loss, especially among the elderly. Limited access to dental care and the high cost of
+                            treatment contribute to this issue.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mt-3">
+                <div class="card">
+                    <div class="card-header">
+                        Malocclusion (Misaligned Teeth)
+                    </div>
+                    <div class="card-body">
+                        <p>Malocclusion is also common, especially in younger populations. It refers to misaligned teeth
+                            or improper jaw positioning, which can lead to difficulty in chewing, speech problems, and
+                            self-esteem issues.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mt-3">
+                <div class="card">
+                    <div class="card-header">
+                        Oral Cancer
+                    </div>
+                    <div class="card-body">
+                        <p>While less common than caries and gum disease, oral cancer cases are on the rise in certain
+                            regions of Indonesia, often linked to tobacco use and betel nut chewing, particularly in
+                            rural areas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END DENTAL PROBLEMS EXPLANATION -->
+
+        <!-- OTHER DENTAL PROBLEMS -->
+        <h1 class="text-center mb-5 mt-5">Dental Diseases</h1>
+
+        <!-- Disease Cards -->
+        <div class="row" id="disease-cards">
+        </div>
+
+        <!-- Pagination -->
+        <nav class="mt-4">
+            <ul class="pagination justify-content-center" id="pagination">
+            </ul>
+        </nav>
+        <!-- END OTHER DENTAL PROBLEMS -->
+    </div>
+
+    <!-- modal -->
+    <div class="modal fade" id="symptommodal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modaltitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalbody">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+    <!-- end content -->
+
+    <!-- footer -->
+    <footer class="d-flex justify-content-center bg-secondary bg-gradient bg-opacity-75" style="margin-top: 5%;">
+        <p class="mt-2">
+            Made with love
+            <i class="fa-solid fa-heart"></i>
+            <a href="footer.html" style="color: black;">Group 4</a>
+        </p>
+    </footer>
+    <!-- end footer -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script>
+        // List of dental diseases and explanations
+        const diseases = [
+            {
+                name: "Tooth Decay (Caries)",
+                description: "Tooth decay, also known as cavities or caries, occurs when plaque on the teeth produces acid that erodes the enamel and dentin."
+            },
+            {
+                name: "Gingivitis",
+                description: "Gingivitis is the early stage of gum disease caused by plaque buildup at the gumline, leading to inflammation and bleeding gums."
+            },
+            {
+                name: "Periodontitis",
+                description: "Periodontitis is an advanced gum disease that can cause gum recession, bone loss, and tooth loss if untreated."
+            },
+            {
+                name: "Tooth Sensitivity",
+                description: "Tooth sensitivity occurs when the enamel wears down or the gums recede, exposing the dentin and nerve endings, leading to discomfort with hot, cold, or sweet foods."
+            },
+            {
+                name: "Tooth Abscess",
+                description: "A tooth abscess is a pocket of pus caused by a bacterial infection at the root of a tooth, usually resulting in severe pain and swelling."
+            },
+            {
+                name: "Bruxism",
+                description: "Bruxism is the involuntary grinding or clenching of teeth, usually during sleep, which can cause tooth wear, jaw pain, and headaches."
+            },
+            {
+                name: "Oral Cancer",
+                description: "Oral cancer includes cancers of the mouth, tongue, and throat. Symptoms include sores that don't heal, lumps, and persistent mouth pain."
+            },
+            {
+                name: "Halitosis",
+                description: "Halitosis, or bad breath, is caused by poor oral hygiene, gum disease, or underlying health issues, leading to persistent bad odor from the mouth."
+            },
+            {
+                name: "Dry Mouth (Xerostomia)",
+                description: "Dry mouth occurs when the salivary glands don’t produce enough saliva, leading to discomfort, difficulty eating, and increased risk of tooth decay."
+            },
+            {
+                name: "Tartar Buildup",
+                description: "Tartar forms when plaque hardens on the teeth. It can only be removed by a dentist and may lead to gum disease if left untreated."
+            },
+            {
+                name: "Impacted Teeth",
+                description: "Impacted teeth occur when teeth, usually wisdom teeth, don’t have enough space to emerge properly, causing pain and infection."
+            },
+            {
+                name: "Canker Sores",
+                description: "Canker sores are small, painful ulcers that develop on the soft tissues inside the mouth. They are usually harmless but can cause discomfort."
+            }
+        ];
+
+        const itemsPerPage = 4;
+        let currentPage = 1;
+
+        // Function to render disease cards for the current page
+        const renderCards = (page) => {
+            const diseaseCards = document.getElementById('disease-cards');
+            diseaseCards.innerHTML = ''; // Clear previous cards
+
+            const start = (page - 1) * itemsPerPage;
+            const end = page * itemsPerPage;
+            const diseasesToDisplay = diseases.slice(start, end);
+
+            diseasesToDisplay.forEach(disease => {
+                diseaseCards.innerHTML += `
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>${disease.name}</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>${disease.description}</p>
+                        </div>
+                    </div>
+                </div>`;
+            });
+        };
+
+        // Function to render pagination buttons
+        const renderPagination = () => {
+            const pagination = document.getElementById('pagination');
+            pagination.innerHTML = ''; // Clear previous pagination
+
+            const totalPages = Math.ceil(diseases.length / itemsPerPage);
+
+            for (let i = 1; i <= totalPages; i++) {
+                pagination.innerHTML += `
+                <li class="page-item ${i === currentPage ? 'active' : ''}">
+                    <a class="page-link" onclick="changePage(${i})">${i}</a>
+                </li>`;
+            }
+        };
+
+        // Function to change the current page
+        const changePage = (page) => {
+            currentPage = page;
+            renderCards(page);
+            renderPagination();
+        };
+
+        // Initial rendering
+        renderCards(currentPage);
+        renderPagination();
+
+        //symptommodal
+        const symptommodal = (id) => {
+            let modaltitle;
+            let modalbody;
+            switch (id) {
+                case 1:
+                    modaltitle = `<h5 class="modal-title">Symptoms of Tooth Decay</h5>`
+                    modalbody = `
+                                <ul>
+                                    <li>Toothache</li>
+                                    <li>Tooth Sensitivity</li>
+                                    <li>Visible Cavities</li>
+                                    <li>Tooth Stains</li>
+                                    <li>Pain When Chewing</li>
+                                    <li>Bad Breath</li>
+                                    <li>Swollen or Bleeding Gums</li>
+                                </ul>`
+                    break;
+
+                case 2:
+                    modaltitle = `<h5 class="modal-title">Symptoms of Periodontal Disease</h5>`
+                    modalbody = `<ul>
+                                    <li>Swollen or Puffy Gums</li>
+                                    <li>Bleeding Gums</li>
+                                    <li>Receding Gums</li>
+                                    <li>Persistent Bad Breath</li>
+                                    <li>Loose Teeth</li>
+                                    <li>Painful Chewing</li>
+                                    <li>Pus Between Teeth and Gums</li>
+                                    <li>Changes in Bite</li>
+                                </ul>`
+                    break;
+
+                case 3:
+                    modaltitle = `<h5 class="modal-title">Symptoms of Tooth Loss</h5>`
+                    modalbody = `<ul>
+                                    <li>Loose Teeth</li>
+                                    <li>Gum Recession</li>
+                                    <li>Swollen or Bleeding Gums</li>
+                                    <li>Persistent Tooth Pain</li>
+                                    <li>Shifting Teeth</li>
+                                    <li>Difficulty Chewing</li>
+                                    <li>Gap in the Mouth</li>
+                                    <li>Bad Breath</li>
+                                </ul>`
+                    break;
+                case 4:
+                    modaltitle = `<h5 class="modal-title">Symptoms of Malocclusion (Misaligned Teeth)</h5>`
+                    modalbody = `<ul>
+                                    <li>Crooked or Overlapping Teeth</li>
+                                    <li>Bite Issues</li>
+                                    <li>Jaw Pain</li>
+                                    <li>Frequent Headaches</li>
+                                    <li>Speech Difficulties</li>
+                                    <li>Wear and Tear on Teeth</li>
+                                    <li>Gum Problems</li>
+                                    <li>Facial Asymmetry</li>
+                                </ul>`
+                    break;
+                case 5:
+                    modaltitle = `<h5 class="modal-title">Symptoms of Oral Cancer</h5>`
+                    modalbody = `<ul>
+                                    <li>Sores or Ulcers</li>
+                                    <li>Lumps or Thickening</li>
+                                    <li>Red or White Patches</li>
+                                    <li>Difficulty Swallowing</li>
+                                    <li>Sore Throat</li>
+                                    <li>Change in Voice</li>
+                                    <li>Numbness</li>
+                                    <li>Weight Loss</li>
+                                    <li>Bad Breath</li>
+                                </ul>`
+                    break;
+            }
+
+            $('#modaltitle').html(modaltitle);
+            $('#modalbody').html(modalbody);
+            $('.modal').modal('show');
+        }
+
+        window.addEventListener('load', function () {
+            document.body.classList.add('fade-in');
+        });
+    </script>
+</body>
+
+</html>

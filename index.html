@@ -7,282 +7,112 @@
     <title>Dental Health | Index</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <style>
-        .fade-in {
-            opacity: 0;
-            animation: fadeIn 1.5s ease-in-out forwards;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        .navbar-nav .nav-link:hover {
-            background-color: rgba(255, 255, 255, 0.75);
-            border-radius: 10px;
-        }
-
-        .custom-carousel {
-            height: 90vh;
-        }
-
-        .custom-carousel .carousel-item {
-            height: 90vh;
-        }
-
-        .custom-carousel img {
-            object-fit: cover;
-            height: 100%;
-        }
-
-        .highcharts-figure,
-        .highcharts-data-table table {
-            min-width: 360px;
-            max-width: 800px;
-            margin: 1em auto;
-            height: 438px;
-        }
-
-        .highcharts-data-table table {
-            font-family: Verdana, sans-serif;
-            border-collapse: collapse;
-            border: 1px solid #ebebeb;
-            margin: 10px auto;
-            text-align: center;
+        .dashed-box {
+            border: 2px dashed white;
+            padding: 20px;
             width: 100%;
-            max-width: 500px;
-        }
-
-        .highcharts-data-table caption {
-            padding: 1em 0;
-            font-size: 1.2em;
-            color: #555;
-        }
-
-        .highcharts-data-table th {
-            font-weight: 600;
-            padding: 0.5em;
-        }
-
-        .highcharts-data-table td,
-        .highcharts-data-table th,
-        .highcharts-data-table caption {
-            padding: 0.5em;
-        }
-
-        .highcharts-data-table thead tr,
-        .highcharts-data-table tr:nth-child(even) {
-            background: #f8f8f8;
-        }
-
-        .highcharts-data-table tr:hover {
-            background: #f1f7ff;
+            height: 362px;
         }
     </style>
 </head>
 
-<body class="bg-light">
-
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-secondary bg-gradient bg-opacity-75">
-        <div class="container-fluid">
-            <button class="navbar-toggler mb-3" type="button" id="navbarToggle" aria-controls="navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse container" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active bg-light bg-opacity-75" aria-current="page" href="index.html"
-                            style="border-radius: 10px;">Home</a>
-                    </li>
-                    <li class="nav-item ms-3">
-                        <a class="nav-link" href="diseases.html">Diseases</a>
-                    </li>
-                    <li class="nav-item ms-3">
-                        <a class="nav-link" href="clinics.html">Clinics</a>
-                    </li>
-                    <li class="nav-item ms-3">
-                        <a class="nav-link" href="information.html">Information</a>
-                    </li>
-                </ul>
+<body>
+    <div class="row">
+        <div class="col-4" style="background-color: #e4adf7;height: 810px;">
+            <div class="d-flex justify-content-center align-items-center" style="margin-top: 15px;">
+                <img src="/asset/image/unindra.png" class="me-2" style="width: 30px;">
+                <p class="m-0" style="font-size: larger;"><b>UNIVERSITAS INDRAPRASTA PGRI</b></p>
+            </div>
+            <div class="d-flex justify-content-center align-items-center" style="margin-top: 70px;">
+                <h3 class="text-center" style="color: yellow;"><b>KESEHATAN GIGI <br> DAN MULUT</b></h3>
+            </div>
+            <div class="d-flex justify-content-center align-items-center mt-2">
+                <img src="asset/image/tooth1.png" alt="" width="90%">
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <h1 class="text-center" style="color: yellow;"><b>AYO.. <br> SIKAT GIGI</b></h1>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <h5 class="text-center" style="color: white;"><b>dengan Baik dan Benar</b></h5>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <h6 class="text-center" style="color: white;"><b>UNIVERSITAS INDRAPRASTA PGRI</b></h6>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <p class="text-center" style="color: white;"><b>Promosi Kesehatan & Pemberdayaan Masyarakat</b></p>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <a href="footer.html" style="color: white;">Klik untuk informasi lebih lanjut</a>
             </div>
         </div>
-    </nav>
-    <!-- end navbar -->
-
-    <!-- content -->
-
-    <!-- carousel -->
-    <div id="carouselExampleCaptions" class="carousel slide custom-carousel" data-bs-ride="false">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="asset/image/corousel1.jpeg" class="d-block w-100" alt="...">
-                <div class="carousel-caption">
-                    <h5>Martin H. Fischer</h5>
-                    <p>I found that most men prefer to have their stomachs operated on for five hundred dollars rather
-                        than having their teeth extracted for five hundred dollars.
-                    </p>
+        <div class="col-4" style="background-color: #bd68d9;height: 810px;">
+            <div style="margin-top: 15px;">
+                <p style="font-size: larger;color: white;"><b>BAGIAN - BAGIAN MULUT & GIGI</b></p>
+            </div>
+            <div class="dashed-box">
+                <img src="/asset/image/tooth2.png" alt="" style="width: 200px;">
+                <div style="margin-top: 15px;">
+                    <ol style="font-size: larger;color: white;list-style-type:square;font-size: medium;">
+                        <li>Gigi berfungsi untuk mengucapkan kata-kata dengan jelas(berbicara).</li>
+                        <li>Gigi penting untuk penampilan dan dapat membentuk wajah.</li>
+                        <li>Mengunyah makanan dengan gigi adalah langkah awal dalam proses pencernaan.</li>
+                    </ol>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="asset/image/corousel2.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption">
-                    <h5>Joseph Barbera</h5>
-                    <p>When faced with the choice between enduring severe tooth pain or going to the dentist, we often
-                        try to hold out until our tooth heals.</p>
+            <div class="dashed-box mt-1" style="height: 373px;">
+                <div class="d-flex align-items-center">
+                    <img src="/asset/image/tooth1.png" alt="" style="width: 50px;">
+                    <p style="font-size: larger;color: white;"><b>TIPS MERAWAT GIGI ANAK</b></p>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <img src="asset/image/corousel3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption">
-                    <h5>George Bernard Shaw</h5>
-                    <p>People with toothaches think everyone is happy if their teeth are healthy</p>
+                <div style="margin-top: 15px;">
+                    <ol style="font-size: larger;color: white;list-style-type:square;font-size: medium;">
+                        <li>Menggosok gigi batita sebaiknya tidak menggunakan pasta gigi namun cukup digosok dengan
+                            sikat gigi yang sesuai dengan usia anak.</li>
+                        <li>Memakai sikat lidah, lidah bisa menjadi tempat berkumpulnya bakteri yang dapat menyebabkan
+                            bau mulut.</li>
+                        <li>Untuk anak batita usahakan berkumur menggunakan air yang sudah masak karena anak belum
+                            begitu mahir berkumur yang dikhawatirkan anak menelan air dan pasta gigi.</li>
+                    </ol>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <!-- end carousel -->
-
-    <!-- graphic -->
-    <div class="container" style="margin-top: 5%;">
-        <h1 class="d-flex justify-content-center">Dental Disorder Patients in Indonesia</h1>
-        <div class="row mt-5">
-            <div class="col-md-6 col-12 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <figure class="highcharts-figure">
-                            <div id="container"></div>
-                        </figure>
-                    </div>
-                </div>
+        <div class="col-4" style="background-color: #c678fa;">
+            <div style="margin-top: 15px;">
+                <p style="font-size: larger;color: white;"><b>LANGKAH-LANGKAH MENYIKAT GIGI</b></p>
             </div>
-            <div class="col-md-6 col-12">
-                <div class="card">
-                    <div class="card-header">
-                        CONCLUSION
-                    </div>
-                    <div class="card-body">
-                        <p>Based on the data beside, over the past five years, the Indonesian population has experienced
-                            an increase of one million people with dental disorders. This indicates that education
-                            regarding dental care and its implementation is still lacking. Additionally, the cost of
-                            visiting a dentist is quite high for the average per capita income of the Indonesian people.
-                        </p>
-                    </div>
-                </div>
-                <div class="card mt-2">
-                    <div class="card-header">
-                        GOVERNMENT ACTION
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li>Public Awareness Campaigns</li>
-                            <li>School Dental Health Programs</li>
-                            <li>Improving Access to Dental Care</li>
-                            <li>Collaboration with Health Professionals</li>
-                            <li>Subsidized Dental Services</li>
-                            <li>Training for Dental Practitioners</li>
-                        </ul>
-                    </div>
+            <div class="dashed-box mt-1" style="height: 740px;">
+                <div style="margin-top: 15px;">
+                    <ol style="font-size: larger;color: white;list-style-type:square;font-size: medium;">
+                        <li>Pilih sikat gigi yang berserat baik, lembut, dan tidak terlalu keras dengan gagang lurus
+                            serta sikat sesuai dengan ukuran mulut.</li>
+                        <img src="asset/image/sikatgigi.jpeg" alt="" style="width: 180px;border-radius: 10px;">
+                        <li>Gosok gigi secara benar & teratur dalam waktu 2x sehari, setelah makan dan sebelum tidur.
+                        </li>
+                        <li>Menggosok gigi setelah makan bertujuan untuk mengangkat sisa-sisa makanan yang menempel di
+                            permukaan ataupun di sela-sela gigi dan gusi. Sedangkan menggosok gigi sebelum tidur berguna
+                            untuk menahan perkembangbiakan bakteri dalam mulut karena dalam keadaan tidur tidak
+                            diproduksi ludah yang berfungsi membersihkan gigi & mulut secara alami</li>
+                        <li>Untuk gigi atas, gerakan sikat gigi dari atas ke bawah dan sebaliknya.</li>
+                        <li>Posisi sikat gigi 45 derajat di daerah perbatasan antara gigi & gusi</li>
+                        <li>Gosok seluruh permukaan gigi, gusi, serta lidah</li>
+                    </ol>
+                    <p style="color: white;">Berikut contohnya :</p>
+                    <button class="btn btn-light btn-sm" onclick="showmodal(1)">Contoh 1</button>
+                    <button class="btn btn-light btn-sm" onclick="showmodal(2)">Contoh 2</button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end graphic -->
 
-    <!-- Counseling -->
-    <div class="container" style="margin-top: 5%;">
-        <h1 class="d-flex justify-content-center">Dental Health Counseling in Indonesia</h1>
-        <div class="row d-flex justify-content-center">
-            <div class="col-md-4 col-sm-12 mt-2">
-                <div class="card" style="height: 257px;">
-                    <div class="card-header">
-                        <h4>Dental Check-up</h4>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Regular dental check-ups help prevent problems before they start. It is
-                            essential to visit a dentist every six months.</p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal1">Learn More</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-12 mt-2">
-                <div class="card" style="height: 257px;">
-                    <div class="card-header">
-                        <h4>Oral Hygiene</h4>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Maintaining good oral hygiene is crucial for overall health. Brush and
-                            floss daily, and avoid sugary foods.</p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal2">Learn More</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-12 mt-2">
-                <div class="card" style="height: 257px;">
-                    <div class="card-header">
-                        <h4>Healthy Diet</h4>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Eating a balanced diet rich in vitamins and minerals can support oral
-                            health. Drink plenty of water and limit soda intake.</p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal3">Learn More</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end Counseling -->
-
-    <!-- Modals -->
-    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Dental Check-up</h5>
+                    <h1 class="modal-title fs-5" id="modal-title"></h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <p>It is crucial to schedule regular dental check-ups to ensure your oral health is maintained.
-                        Dentists can identify potential issues before they become serious. Aim for a check-up every six
-                        months for optimal care.</p>
+                <div class="modal-body" id="modal-body">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -290,89 +120,26 @@
             </div>
         </div>
     </div>
-
-    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Oral Hygiene</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Good oral hygiene practices include brushing your teeth twice a day, flossing daily, and
-                        rinsing with mouthwash. These steps can help prevent cavities and gum disease.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Healthy Diet</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>A healthy diet plays a significant role in maintaining oral health. Foods rich in calcium,
-                        phosphorus, and vitamins are essential. Limit sugary snacks and drinks to reduce the risk of
-                        cavities.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end Modals -->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-6OHh6AIE6yb4Kso8Jp1I05iBdVv4g+V+e79TifZfYQ9w3Zk2l68y5aXt7DBhb5Ht" crossorigin="anonymous"></script>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const data = {
-                categories: ['Cavities', 'Gum Disease', 'Tooth Sensitivity', 'Oral Cancer'],
-                series: [{
-                    name: 'Patients',
-                    data: [100, 80, 50, 20]
-                }]
-            };
+        const showmodal = (type) => {
+            const modalTitle = document.getElementById('modal-title');
+            const modalBody = document.getElementById('modal-body');
+            const modalElement = new bootstrap.Modal(document.getElementById('exampleModal'));
 
-            Highcharts.chart('container', {
-                chart: {
-                    type: 'column'
-                },
-                title: {
-                    text: 'Dental Disorders among Patients in Indonesia'
-                },
-                xAxis: {
-                    categories: data.categories,
-                    title: {
-                        text: null
-                    }
-                },
-                yAxis: {
-                    min: 0,
-                    title: {
-                        text: 'Number of Patients',
-                        align: 'high'
-                    }
-                },
-                legend: {
-                    layout: 'vertical',
-                    align: 'right',
-                    verticalAlign: 'middle'
-                },
-                series: data.series,
-                credits: {
-                    enabled: false
-                }
-            });
-        });
+            if (type === 1) {
+                modalTitle.innerText = 'Contoh 1';
+                modalBody.innerHTML = '<img src="asset/image/caramenyikatgigi1.jpeg" alt="" style="width: 400px;">';
+            } else if (type === 2) {
+                modalTitle.innerText = 'Contoh 2';
+                modalBody.innerHTML = '<img src="asset/image/caramenyikatgigi2.webp" alt="" style="width: 400px;">';
+            }
+
+            modalElement.show();
+        }
     </script>
 </body>
+
 </html>

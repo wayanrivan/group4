@@ -101,6 +101,7 @@
                     <p style="color: white;">Berikut contohnya :</p>
                     <button class="btn btn-light btn-sm" onclick="showmodal(1)">Contoh 1</button>
                     <button class="btn btn-light btn-sm" onclick="showmodal(2)">Contoh 2</button>
+                    <button class="btn btn-light btn-sm" onclick="showmodal(3)">Contoh 3</button>
                 </div>
             </div>
         </div>
@@ -171,7 +172,7 @@
                 </p>
             </div>
         </div>
-        <div class="col-4" style="background-color: #c678fa;" >
+        <div class="col-4" style="background-color: #c678fa;">
             <div style="margin-top: 15px;">
                 <p style="font-size: larger;color: white;"><b>CARA MENJAGA AGAR GIGI TETAP SEHAT</b></p>
             </div>
@@ -179,10 +180,16 @@
                 <div style="margin-top: 15px;">
                     <ol style="font-size: larger;color: white;list-style-type:square;font-size: medium;">
                         <li>Perbanyak makan - makanan yang berserat dan berair.</li>
-                        <li>Menyikat gigi dengan pasta berflupride minimal 2x sehari (sesudah sarapan dan sebelum tidur malam).</li>
-                        <li>Menggunakan benang gigi untuk membantu membersihkan gigi atau gunakan tusuk gigi yang bersih dan ujungnya runcing.</li>
-                        <li>Pada kenyataannya, perawatan gigi yang dilakukan secara personal tidaklah cukup. Gigi juga memerlukan perawatan secara profesional, terlebih pada gigi sensitif atau gigi yang telah terlanjur mengalami kerusakan, misalnya gigi berlubang.</li>
-                        <li>Gigi berlubang harus segera ditambal untuk mencegah kerusakan lebih lanjut. Pada anak-anak, jika gigi berlubang segera ke dokter gigi agar dapat dilakukan perawatan untuk menghindari kerusakan pada gigi pengganti atau gigi tetapnya.</li>
+                        <li>Menyikat gigi dengan pasta berflupride minimal 2x sehari (sesudah sarapan dan sebelum tidur
+                            malam).</li>
+                        <li>Menggunakan benang gigi untuk membantu membersihkan gigi atau gunakan tusuk gigi yang bersih
+                            dan ujungnya runcing.</li>
+                        <li>Pada kenyataannya, perawatan gigi yang dilakukan secara personal tidaklah cukup. Gigi juga
+                            memerlukan perawatan secara profesional, terlebih pada gigi sensitif atau gigi yang telah
+                            terlanjur mengalami kerusakan, misalnya gigi berlubang.</li>
+                        <li>Gigi berlubang harus segera ditambal untuk mencegah kerusakan lebih lanjut. Pada anak-anak,
+                            jika gigi berlubang segera ke dokter gigi agar dapat dilakukan perawatan untuk menghindari
+                            kerusakan pada gigi pengganti atau gigi tetapnya.</li>
                         <li>Kontrol secara teratur ke dokter gigi setiap 6 bukan sekali</li>
                     </ol>
                     <img src="asset/image/makananberserat1.jpg" alt="" style="width: 200px;border-radius: 10px;">
@@ -215,14 +222,24 @@
             const modalBody = document.getElementById('modal-body');
             const modalElement = new bootstrap.Modal(document.getElementById('exampleModal'));
 
-            if (type === 1) {
-                modalTitle.innerText = 'Contoh 1';
-                modalBody.innerHTML = '<img src="asset/image/caramenyikatgigi1.jpeg" alt="" style="width: 400px;">';
-            } else if (type === 2) {
-                modalTitle.innerText = 'Contoh 2';
-                modalBody.innerHTML = '<img src="asset/image/caramenyikatgigi2.webp" alt="" style="width: 400px;">';
-            }
+            switch (type) {
+                case 1:
+                    modalTitle.innerText = 'Contoh 1';
+                    modalBody.innerHTML = '<img src="asset/image/caramenyikatgigi1.jpeg" alt="" style="width: 400px;">';
+                    break;
+                case 2:
+                    modalTitle.innerText = 'Contoh 2';
+                    modalBody.innerHTML = '<img src="asset/image/caramenyikatgigi2.webp" alt="" style="width: 400px;">';
+                    break;
+                case 3:
+                    modalTitle.innerText = 'Contoh 3';
+                    modalBody.innerHTML = `
+                                        <video width="480" height="240"  controls>
+                                        <source src="asset/carasikatgigi.mp4" type="video/mp4">
+                                        </video>`
+                    break;
 
+            }
             modalElement.show();
         }
     </script>
